@@ -25,6 +25,8 @@ A solução demonstra a criação de uma aplicação simples em Python, containe
 A validação dos manifests Kubernetes foi realizada localmente utilizando k3d/minikube.  
 No pipeline CI, optei por não incluir validação com kubectl para evitar dependência de cluster no ambiente de execução.
 
+---
+
 ## 🏗️ Arquitetura
 
 ```mermaid
