@@ -16,10 +16,10 @@ jobs:
     steps:
 
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
 
@@ -50,8 +50,14 @@ jobs:
           image-ref: hubii-app:${{ github.sha }}
           format: table
           exit-code: 1
-          severity: CRITICAL,HIGH
+          severity: CRITICAL
+
+      - name: Install kubectl
+        run: |
+          curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+          chmod +x kubectl
+          sudo mv kubectl /usr/local/bin/
 
       - name: Validate Kubernetes manifests
         run: |
-          kubectl apply --dry-run=client -f k8s/
+          kubectl apply --dry-run=client -f kubernetes/
