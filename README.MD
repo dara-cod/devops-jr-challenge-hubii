@@ -18,6 +18,13 @@ A solução demonstra a criação de uma aplicação simples em Python, containe
 ✔️ CI/CD implementado  
 ✔️ Segurança aplicada  
 
+---
+
+## 📌 Observações
+
+A validação dos manifests Kubernetes foi realizada localmente utilizando k3d/minikube.  
+No pipeline CI, optei por não incluir validação com kubectl para evitar dependência de cluster no ambiente de execução.
+
 ## 🏗️ Arquitetura
 
 ```mermaid
@@ -213,8 +220,6 @@ imagePullPolicy: IfNotPresent
 ## 🔹 Alternativa
 
 Caso haja problemas com k3d, pode-se utilizar o Minikube como alternativa estável para execução local.
-
-A validação de manifests Kubernetes não foi incluída na pipeline pois exigiria um cluster ativo no ambiente de CI. Como alternativa, os manifests foram testados localmente com k3d/minikube
 
 ---
 
