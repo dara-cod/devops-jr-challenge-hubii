@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hubii-app
+  labels:
+    name: hubii-app
+    project: hubii-challenge

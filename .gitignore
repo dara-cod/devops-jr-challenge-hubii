@@ -1,0 +1,78 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.env/
+.env.*
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Logs
+*.log
+
+
+# Environment variables
+
+.env
+.env.local
+.env.dev
+.env.prod
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+
+# Docker
+
+*.tar
+
+
+# Kubernetes
+
+kubeconfig
+*.kubeconfig
+
+
+# Terraform
+
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+terraform.tfstate
+*.tfvars
+.env
+
+# CI/CD
+
+coverage/
+reports/
+
+# OS files
+
+Thumbs.db
