@@ -1,4 +1,4 @@
-![CI Pipeline](https://github.com/dara-cod/devops-jr-challenge-hubii/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/dara-cod/devops-jr-challenge-hubii/actions/workflows/ci.yml/badge.svg?branch=develop)
 
 # DevOps Jr Challenge – Hubii 🚀
 
