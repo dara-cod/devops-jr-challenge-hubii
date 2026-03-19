@@ -214,6 +214,8 @@ imagePullPolicy: IfNotPresent
 
 Caso haja problemas com k3d, pode-se utilizar o Minikube como alternativa estável para execução local.
 
+A validação de manifests Kubernetes não foi incluída na pipeline pois exigiria um cluster ativo no ambiente de CI. Como alternativa, os manifests foram testados localmente com k3d/minikube
+
 ---
 
 # ⚙️ Decisões Técnicas
